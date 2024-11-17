@@ -1,0 +1,23 @@
+{
+  "name": "bloxystores.js",
+  "version": "0.0.0",
+  "description": "A JavaScript/TypeScript API wrapper for the roblox datastores web API.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "npx tsc"
+  },
+  "keywords": [
+    "roblox",
+    "datastores"
+  ],
+  "author": "Soap-0020",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^5.6.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Soap-0020/bloxystores.js"
+  }
+}
