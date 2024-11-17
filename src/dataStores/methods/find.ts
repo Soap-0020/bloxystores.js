@@ -7,7 +7,8 @@ const findDataStore = (dataStore: string, options?: Partial<FindOptions>) =>
     Links.dataStoreList(dataStore) +
       Object.entries(options ?? {})
         .map(
-          ([key, value], index) => (index == 0 ? "?" : "&") + key + `=${value}`
+          ([key, value], index) =>
+            (index == 0 ? "?" : "&") + key + `=${encodeURIComponent(value)}`
         )
         .join("")
   );
